@@ -3,7 +3,7 @@
 let canvas = document.createElement('canvas');
 let cxt = canvas.getContext('2d');
 
-canvas.height = 18;
+canvas.height = 16;
 canvas.width = 12;
 
 var [r, g, b] = [255, 0, 0];
@@ -47,7 +47,6 @@ function drawcursor(){
     b += k;
 
     cxt.fillStyle = 'rgb(' + r + ',' + g + ',' + b + ')';
-    //cxt.fillRect(0,0,12,18);
 
     //draw cursor
     cxt.lineWidth = 1;
@@ -65,4 +64,4 @@ function drawcursor(){
     document.body.style.cursor = 'url(' + canvas.toDataURL() + '), auto';
 }
 
-window.setInterval(function(){drawcursor();},10);
+window.setInterval(function(){drawcursor();}, 10);
