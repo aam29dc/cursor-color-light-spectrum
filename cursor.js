@@ -3,7 +3,7 @@
 let canvas = document.createElement('canvas');
 let cxt = canvas.getContext('2d');
 
-canvas.height = 16;
+canvas.height = 17;
 canvas.width = 12;
 
 var [r, g, b] = [255, 0, 0];
